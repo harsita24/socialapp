@@ -1,47 +1,68 @@
-SocialApp
-SocialApp is a lightweight social networking platform built using Django.
-It enables users to sign in, create public or private posts, and manage passwords securely.
+# SocialApp
+
+**SocialApp** is a lightweight social networking platform built using Django. It enables users to sign in, create public or private posts, and manage passwords securely.
+
+---
+
+## ✨ Features
+
+● **User Authentication**  
+&nbsp;&nbsp;&nbsp;&nbsp;● Signup, Login, and Logout  
+&nbsp;&nbsp;&nbsp;&nbsp;● Secure password change with validation
+
+● **Post Management**  
+&nbsp;&nbsp;&nbsp;&nbsp;● Create, view, and manage posts  
+&nbsp;&nbsp;&nbsp;&nbsp;● Posts can be marked as Public (visible to all) or Private (visible only to the author)
+
+● **Access Control**  
+&nbsp;&nbsp;&nbsp;&nbsp;● Only authenticated users can access the post feed  
+&nbsp;&nbsp;&nbsp;&nbsp;● Private posts are restricted to the original user
+
+---
+
+## 🛠️ Tech Stack
+
+● Python 3.13  
+● Django 5.2.4  
+● SQLite (default Django database)  
+● HTML & CSS (Django templates)
+
+---
+
+## 🚀 Installation
+
+# 1. Clone the repository
+git clone https://github.com/harsita24/socialapp.git
+cd socialapp
+
+# 2. Create a virtual environment
+python -m venv venv
+
+# 3. Activate the virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Apply migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# 6. Create a superuser (for admin access)
+python manage.py createsuperuser
+
+# 7. Run the development server
+python manage.py runserver
 
 
-Features 
-•	User Authentication
-•	Signup, Login and Logout
-•	Secure password change with validation
-•	Post Management 
-•	Create, view, and manage posts
-•	Posts can be marked as Public (visible to all) or Private (visible only to the author)
-•	Access Control
-•	Only authenticated users can access the post feed
-•	Private posts are restricted to the original user
+After the last command, open your browser and navigate to:
+http://127.0.0.1:8000
+You’ll now be able to use the SocialApp platform locally.
 
-Tech Stack
-      ● Python 3.13
-      ● Django 5.2.4
-      ● SQLite (default Django database)
-      ● HTML & CSS (Django templates)
-
-
-Installation
-
-Clone the repository:
-•	git clone https://github.com/harsita24/socialapp.git 
-•	cd socialapp
-Create a virtual environment: 
-•	python -m venv venv 
-•	source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies: 
-•	pip install -r requirements.txt
-Apply migrations:
-•	python manage.py makemigrations
-•	python manage.py migrate
-Create a superuser (for admin access):
-•	python manage.py createsuperuser
-Run the development server:
-•	python manage.py runserver 
-•	Visit http://127.0.0.1:8000 in your browser.
-
-Result
-
+## Result
 
 <img width="1900" height="1004" alt="Screenshot 2025-07-28 130659" src="https://github.com/user-attachments/assets/3d8a04bc-07f7-4290-b825-7a9c778c9121" />
 <img width="1903" height="996" alt="Screenshot 2025-07-28 130717" src="https://github.com/user-attachments/assets/154eca29-37d8-4921-a992-92b5115c4f45" />
