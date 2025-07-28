@@ -1,54 +1,44 @@
 SocialApp
-
 SocialApp is a lightweight social networking platform built using Django.
-It enables users to sign in, create public or private posts, and manage passwords securely.
-
-
-Features
-  ● User Authentication
-  ● Signup,Login and Logout  
-  ● Secure password change with validation  
-  ● Post Management
-  ● Create, view, and manage posts  
-  ● Posts can be marked as Public (visible to all) or Private (visible only to the author)  
-  ● Access Control
-  ● Only authenticated users can access the post feed  
-  ● Private posts are restricted to the original user  
-  
-  
+ It enables users to sign in, create public or private posts, and manage passwords securely.
+Features 
+•	User Authentication
+•	Signup, Login and Logout
+•	Secure password change with validation
+•	Post Management 
+•	Create, view, and manage posts
+•	Posts can be marked as Public (visible to all) or Private (visible only to the author)
+•	Access Control
+•	Only authenticated users can access the post feed
+•	Private posts are restricted to the original user
 Tech Stack
-
-● Python 3.13  
-● Django 5.2.4  
-● SQLite (default Django database)  
-● HTML & CSS (Django templates)  
-
-
+      ● Python 3.13
+      ● Django 5.2.4
+      ● SQLite (default Django database)
+      ● HTML & CSS (Django templates)
 Installation
 Clone the repository:
-
-git clone https://github.com/harsita24/socialapp.git
-cd socialapp
-
-Create a virtual environment:
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-Install dependencies:
-pip install -r requirements.txt
-
+	git clone https://github.com/harsita24/socialapp.git 
+	cd socialapp
+Create a virtual environment: 
+	python -m venv venv 
+	source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies: 
+	pip install -r requirements.txt
 Apply migrations:
-python manage.py makemigrations
-python manage.py migrate
+	python manage.py makemigrations
+	python manage.py migrate
+
 
 Create a superuser (for admin access):
-python manage.py createsuperuser
-
+	python manage.py createsuperuser
 Run the development server:
-python manage.py runserver
-Visit http://127.0.0.1:8000 in your browser.
+	python manage.py runserver 
+	Visit http://127.0.0.1:8000 in your browser.
 
 Result
+
+
 
 
 <img width="1900" height="1004" alt="Screenshot 2025-07-28 130659" src="https://github.com/user-attachments/assets/3d8a04bc-07f7-4290-b825-7a9c778c9121" />
