@@ -31,33 +31,32 @@
 
 ## 🚀 Installation
 
-#• Clone the repository:
+# 1. Clone the repository
 git clone https://github.com/harsita24/socialapp.git
 cd socialapp
 
-#• Create a virtual environment:
+# 2. Create a virtual environment
 python -m venv venv
 
-#• Activate the virtual environment:
- - On macOS/Linux: source venv/bin/activate
- - On Windows: venv\Scripts\activate
+# 3. Activate the virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
 
-#• Install dependencies:
+# 4. Install dependencies
 pip install -r requirements.txt
 
-• Apply migrations:
+# 5. Apply migrations
 python manage.py makemigrations
 python manage.py migrate
 
-#• Create a superuser (for admin access):
+# 6. Create a superuser (for admin access)
 python manage.py createsuperuser
 
-#• Run the development server:
+# 7. Run the development server
 python manage.py runserver
 
-After the last command, open your browser and navigate to:
-http://127.0.0.1:8000
-You’ll now be able to use the SocialApp platform locally.
 
 ## Result
 
